@@ -8,10 +8,10 @@
 		<version>2.7.9</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bookclub.</groupId>
-	<artifactId>sample</artifactId>
+	<groupId>com.bookclub</groupId>
+	<artifactId>bookclub</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sample</name>
+	<name>bookclub</name>
 	<description>Sample project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
