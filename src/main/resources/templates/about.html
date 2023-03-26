@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Bookclub | About Us</title>
+  
+ <!-- Bootstrap StyleSheet CDN -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azpr61Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+  
+  <link href="https: //use.fontawesome.com/releases/v5.6.3/css/all.css"
+	rel="stylesheet"
+	integrity="sha384-UHRtZLI+pbxtHCWp1t77B11L4ZtiqrqD80KnZ8NTSRyMA2Fd33n5d08lWUE00s" crossorigin="anonymous">
+	
+</head>
+
+<body>
+	<div th:insert="fragments/header"></div>
+	<div class="container py-5" style="width: 50%;">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h1>Main Idea About the Book Club</h1>
+			 </div>
+		</div>
+		
+		<br /><br />
+		
+		<!-- start of the row -->
+		<div class=" row">
+			<!- start of the six column -->
+			<div class="col-6">
+				
+				<div class="row text-center"> 
+					<div class="col-12">
+						<p class="lead text-muted">
+					The main idea behind the book club is for friendly readers to help them in their discovery. 
+					A lecture does not provide the kind of interaction they want. Recently, video conference technology has come a long way. 
+					People have become familiar with Zoom, and suddenly it's easy for a small group to come together from virtually anywhere in 
+					the country to talk about these important, life-changing books. I have truly enjoyed these seminars myself, and have made good friends leading them. It is my hope to share some of my expertise with you, and at the same time to help you meet other serious readers.
+					 My friends suggested I open up our meetings to on-line groups--and that is how Books club began.
+						</p>
+					</div>
+				</div>
+		 	</div>
+		 	<!- end of six column ->
+		 
+		 	<!-- start of the six column -->
+			 <div class="col-6">
+				<div class="row text-center">
+					<div class="col-12">
+						<h1><i class="as fa-phone text-secondary"></i></h1>
+					</div>
+				</div>
+				
+				<div class="row text-center"> 
+					<div class="col-12">
+						<p class="lead text-muted">
+					Please subscribe by sending an email to bookclub@bellevue.org for news letter and notifications on the new books.
+						</p>
+					</div>
+				</div>
+			 </div>
+			 <!- end of six column ->
+ 		</div>
+	 <!- end the row ->
+	</div>
+
+
+
+	<div th:insert="fragments/scriptFooter"></div>
+
+</body>
+</html>
