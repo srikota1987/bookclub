@@ -23,6 +23,18 @@
 					Welcome to the Book Club app, your "one stop shop" for all of your book club needs.
 					Below you will find a list of this months top 10 favorite books.Select the book to see it's details.
 				</p>
+				<div class="col" th:each="book : ${books}">
+				  <p class = "card-text">
+				  <span th:text="${book.getTitle()}"></span>
+				  <br />
+				  <small class = "text-muted"><em th:text="${book.getDescription()}"></em></small>
+				   <div class = "btn-group">
+				   		<a href = "#" th:href = "@{/{id}(id=${book.getIsbn()})}" class = "btn btn-sm btn-outline-secondary">View</a>
+				   </div>
+				  </p>
+				  </br>
+				  		
+				</div>
 			</div>
 			</div>
 		</section>

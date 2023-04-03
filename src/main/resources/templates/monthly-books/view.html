@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Details</title>
+  
+ <!-- Bootstrap StyleSheet CDN -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azpr61Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+  
+  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+	rel="stylesheet"
+	integrity="sha384-UHRtZLI+pbxtHCWp1t77B11L4ZtiqrqD80KnZ8NTSRyMA2Fd33n5d08lWUE00s" crossorigin="anonymous">
+	
+</head>
+
+<body>
+	
+	
+	
+	<div class="row">
+    <div class="col-sm-3">
+        <div class="card">
+      
+            <div class="card-body">
+                <h2 class="card-title"><span th:text="${book.getTitle()}"></span></h2>
+                <p class="card-text">
+      
+       			<h4>Title :  <span th:text="${book.getTitle()}"></span></h4>
+       			<h4>Description :  <span th:text="${book.getDescription()}"></span></h4>
+       			<h4>ISBN :  <span th:text="${book.getIsbn()}"></span></h4>
+            
+                <h4>Pages:  <span th:text="${book.getNumOfPages()}"></span></h4>
+                <strong>Authors : </strong>
+                <ul th:each="author : ${book.getAuthors()}">
+                	<li th:text= "${author}"> </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        
+        </br>
+        </br>
+        <a href="/" th:href="@{/}"> Return to books</a>
+    </div>
+</div>  
+
+
+
+
+
+
+
+</body>
+
+</html>
