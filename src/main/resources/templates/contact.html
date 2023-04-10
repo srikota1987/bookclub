@@ -2,24 +2,18 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>Bookclub | Contact Us</title>
-  
- <!-- Bootstrap StyleSheet CDN -->
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-EVSTQN3/azpr61Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-	crossorigin="anonymous">
-  
-  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-	rel="stylesheet"
-	integrity="sha384-UHRtZLI+pbxtHCWp1t77B11L4ZtiqrqD80KnZ8NTSRyMA2Fd33n5d08lWUE00s" crossorigin="anonymous">
+  <title>Bookclub | Contact</title>
+  <!-- Bootstrap StyleSheet CDN -->
+ 
+	
+	 <link th:rel="stylesheet" th:href="@{webjars/bootstrap/5.0.2/css/bootstrap.min.css} "/>
 	
 </head>
 
+
 <body>
 	<div th:insert="fragments/header"></div>
-	<div class="container py-5" style="width: 50%;">
+	<div class="container py-5" style="width: 100%;">
 		<div class="row">
 			<div class="col-12 text-center">
 				<h1>Welcome to the contact page.</h1>

@@ -21,7 +21,7 @@ public class HomeController {
 		List<Book> books = bookDao.list();
 		
 		for(Book book: books) {
-			System.out.print(book.toString());
+			System.out.println(book.toString());
 		}
 		
 		model.addAttribute("books", books);

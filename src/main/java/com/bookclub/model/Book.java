@@ -79,7 +79,7 @@ public class Book {
 	@Override
 	public String toString() {
 		
-		return "Book{isbn=" + this.isbn +  ",title=" + this.title + ",description=" + this.description +",numOfPages=" + this.numOfPages +", authors=" + this.getAuthors().get(0) +"}";
+		return "Book{isbn=" + this.isbn +  ",title=" + this.title + ",description=" + this.description +",numOfPages=" + this.numOfPages + "}";
 		
 	}
 	
