@@ -5,6 +5,8 @@ import java.util.List;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
+import org.springframework.data.annotation.Id;
+
 public class WishlistItem {
 	
 	@NotNull
@@ -13,6 +15,9 @@ public class WishlistItem {
 	@NotNull
 	@NotEmpty(message = "Title is a required field")
 	private String title;
+	
+	@Id
+	private String id;
 	
 	public WishlistItem() {
 		
@@ -44,10 +49,17 @@ public class WishlistItem {
 		this.title = title;
 	}
 	
+	
+	
+	public String getId() {
+		return id;
+	}
+
+
 	@Override
 	public String toString() {
 		
-		return "WishlistItem{isbn=" + this.isbn +  ",title=" + this.title +"}";
+		return "WishlistItem{isbn=" + this.isbn +  ",title=" + this.title + ",id=" + this.id +"}";
 		
 	}
 
