@@ -29,9 +29,25 @@
                 </li>
                 
             </ul>
+            
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item float-end">
+                    <a class="nav-link float-end" href="/logout" th:href="@{/logout}">Logout</a>
+                </li>
+               
+            </ul>
         </div>
     </div>
+    
+    
 	</nav>
+	
+	<div class = "nav navbar-nav ml-auto w-100 justify-content-center">
+    	<div sec:authorize = "isAuthenticated()">
+    		Logged in as <strong sec:authentication="name"></strong>
+    	</div>
+    
+    </div>
 	
 
 	
