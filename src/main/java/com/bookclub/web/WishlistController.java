@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.bookclub.model.Book;
 import com.bookclub.model.WishlistItem;
 import com.bookclub.service.dao.WishlistDao;
-import com.bookclub.service.impl.MemBookDao;
+import com.bookclub.service.impl.RestBookDao;
 import com.bookclub.service.impl.MongoWishlistDao;
 
 @Controller

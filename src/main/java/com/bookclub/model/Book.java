@@ -8,8 +8,19 @@ public class Book {
 	private String isbn;
 	private String title;
 	private String description;
+	private String infoUrl;
+	public String getInfoUrl() {
+		return infoUrl;
+	}
+
+
+	public void setInfoUrl(String infoUrl) {
+		this.infoUrl = infoUrl;
+	}
+
+
 	private int numOfPages; 
-	private List<String> authors;
+
 	
 	
 	public Book() {
@@ -17,12 +28,28 @@ public class Book {
 	}
 
 
-	public Book(String isbn, String title, String description, int numOfPages, List<String> authors) {
+	public Book(String isbn, String title, String description, int numOfPages) {
 		this.isbn = isbn;
 		this.title = title;
 		this.description = description;
 		this.numOfPages = numOfPages;
-		this.authors = authors;
+
+	}
+	
+	public Book(String isbn, String title, String description, String infoUrl, int numOfPages) {
+		this.isbn = isbn;
+		this.title = title;
+		this.description = description;
+		this.infoUrl = infoUrl;
+		this.numOfPages = numOfPages;
+
+	}
+	
+	public Book(String isbn, String title, String description) {
+		this.isbn = isbn;
+		this.title = title;
+		this.description = description;
+
 	}
 
 
@@ -63,16 +90,6 @@ public class Book {
 
 	public void setNumOfPages(int numOfPages) {
 		this.numOfPages = numOfPages;
-	}
-
-
-	public List<String> getAuthors() {
-		return authors;
-	}
-
-
-	public void setAuthors(List<String> authors) {
-		this.authors = authors;
 	}
 	
 	
