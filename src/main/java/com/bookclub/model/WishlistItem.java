@@ -1,6 +1,5 @@
 package com.bookclub.model;
 
-import java.util.List;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -16,6 +15,18 @@ public class WishlistItem {
 	@NotEmpty(message = "Title is a required field")
 	private String title;
 	
+	private String username;
+	
+	public String getUsername() {
+		return username;
+	}
+
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+
 	@Id
 	private String id;
 	
@@ -53,6 +64,10 @@ public class WishlistItem {
 	
 	public String getId() {
 		return id;
+	}
+	
+	public void setId(String id) {
+		this.id = id;
 	}
 
 

@@ -9,6 +9,7 @@ public class Book {
 	private String title;
 	private String description;
 	private String infoUrl;
+	private String id;
 	public String getInfoUrl() {
 		return infoUrl;
 	}
@@ -80,6 +81,15 @@ public class Book {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	
+	public String getId() {
+		return id;
+	}
+
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 

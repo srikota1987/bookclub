@@ -6,8 +6,9 @@ public interface GenericCrudDao<E, K> {
 	
 	void add(E entity);
 	void update(E entity);
-	boolean remove(E entity);
+	boolean remove(K key);
 	List<E> list();
 	E find(K key);
+	List<E> list(K key);
 
 }
