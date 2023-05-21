@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>New Monthly Book Form</title>
+  <!-- Bootstrap StyleSheet CDN -->
+ 
+	
+	 <link th:rel="stylesheet" th:href="@{webjars/bootstrap/5.0.2/css/bootstrap.min.css} "/>
+</head>
+
+
+
+
+
+<body>
+	
+	
+<main>	
+<div class="container py-5">
+<div class="row">
+    <form action="#" th:action="@{/monthly-books}" method="post" th:object="${bookOfTheMonth}">
+    	
+    	
+    	<div class = "mb-3">
+	    	<label class = "form-label" for = "month">Months</label>
+	        <select name="month" class = "form-select" th:field="*{month}" id ="month">
+	        	<option th:each="m : ${months.keySet()}" th:value="${m}" th:utext="${months.get(m)}"> </option>
+	        </select>
+    	</div>
+    	
+    	<div class = "mb-3">
+	    	<label class = "form-label" for = "isbn">ISBN</label>
+	        <input type="text" class = "form-control" th:field="*{isbn}" name = "isbn" id ="isbn"/>
+	        <small th:if="${#fields.hasErrors('isbn')}" style="color: red;" th:errors="*{isbn}"></small>
+    	</div>
+    	<br />
+    	
+      
+    
+ 
+
+        <br />
+        <br />
+        
+ 
+        <button type="submit">Save</button>    
+    </form>
+    </div>
+     <br />
+     <br />
+      <br />
+        
+    <div class=" row">
+    <p class = "float-end mb-1" >
+	<a href="/monthly-books" th:href="@{/monthly-books}">Return to Monthly Books</a>
+	</p>
+    </div>
+    
+ </div>
+ </main>
+
+
+	
+</body>
+</html>
